@@ -1,0 +1,12 @@
+CONTENT DISCOVERY
+wfuzz-auto https://example.com/FUZZ
+
+USING SCREEN (background run scripts)
+screen
+screen -ls (list)
+screen -r (connect)
+ctrl + a + d to exit
+screen -r <ID> to connect
+
+ITERATION SCRIPTS RESOLVING
+for i in `cat domains.txt`; do host $i; done
